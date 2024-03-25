@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-
-    <style>
-      div {
-        margin: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/calculator.css">
   </head>
 
   <body>
-    <p class="calculatorDisplay"></p>
+    <p class="js-calculatorDisplay calculatorDisplay"></p>
 
     <div>
       <button onclick="
@@ -28,7 +23,7 @@
         updateCalculation('3');
       ">3</button>
 
-      <button onclick="
+      <button class="orange-button" onclick="
         updateCalculation(' + ');
       ">+</button>
     </div>
@@ -47,7 +42,7 @@
         updateCalculation('6');
       ">6</button>
 
-      <button onclick="
+      <button class="orange-button" onclick="
         updateCalculation(' - ');
       ">-</button>
     </div>
@@ -65,7 +60,7 @@
         updateCalculation('9');
       ">9</button>
 
-      <button onclick="
+      <button class="orange-button" onclick="
         updateCalculation(' * ');
       ">*</button>
     </div>
@@ -85,13 +80,14 @@
         displayCalculation();
       ">=</button>
 
-      <button onclick="
+      <button class="orange-button" onclick="
         updateCalculation(' / ');
       ">/</button>
     </div>
 
     <div>
       <button
+        class="clear-button"
         onclick="calculation = '';
         saveCalculation();
         console.log('Cleared.');
@@ -99,24 +95,6 @@
         ">Clear</button>
     </div>
 
-    <script>
-      let calculation = JSON.parse(localStorage.getItem('calculation')) || '';
-        displayCalculation();
-
-      function updateCalculation (button_value) {
-        calculation += button_value;
-        displayCalculation()
-        saveCalculation();
-      }
-
-      function saveCalculation () {
-        localStorage.setItem('calculation', JSON.stringify(calculation));
-      }
-
-      function displayCalculation() {
-        document.querySelector('.calculatorDisplay')
-          .innerText = calculation;
-      }
-    </script>
+    <script src="scripts/calculator.js"></script>
   </body>
 </html>
