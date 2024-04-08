@@ -1,6 +1,6 @@
 # Project Screenshots
 
-***Project: MyCalculator***
+## Project: MyCalculator ##
 
 This HTML document represents a basic calculator interface. <br>
 Users can perform arithmetic operations such as addition, subtraction, multiplication, and division by clicking on the respective buttons. <br>
