@@ -2,9 +2,9 @@
 
 ## Project: MyCalculator ##
 
-This HTML document represents a basic calculator interface. <br>
-Users can perform arithmetic operations such as addition, subtraction, multiplication, and division by clicking on the respective buttons. <br>
-The calculator displays the input and the result in a clear format, providing a simple and interactive way to perform calculations.
+• This HTML document represents a basic calculator interface. <br>
+• Users can perform arithmetic operations such as addition, subtraction, multiplication, and division by clicking on the respective buttons. <br>
+• The calculator displays the input and the result in a clear format, providing a simple and interactive way to perform calculations.
 
 ## Initial Calculator State ## 
 *The calculator's initial state features a sleek black display, ready for user input and arithmetic operations.*
