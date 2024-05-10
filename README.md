@@ -1,4 +1,4 @@
-# Project Screenshots
+# Project Summary
 
 ## Project: MyCalculator ##
 
